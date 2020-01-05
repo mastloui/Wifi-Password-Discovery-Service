@@ -13,7 +13,7 @@ namespace WifiPasswordDiscoveryService
             
             if(!networkInterfacePropertyBag.ContainsKey(NetSh.WifiProfileKey))
             {
-                Console.WriteLine("You are not connected to a network!");
+                Console.WriteLine("You are not connected to a Wifi network!");
                 Console.ReadKey();
                 return;
             }

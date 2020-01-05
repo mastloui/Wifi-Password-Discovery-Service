@@ -48,4 +48,4 @@ ECHO %batchName% Arguments: %1 %2 %3 %4 %5 %6 %7 %8 %9
 echo Copying folder to startup folder. Macro is CTRL + ALT + W.
 Xcopy /E /I bin  "%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\WifiPasswordDiscoveryService"
 Xcopy /E /I resources  "%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs"
-cmd /k
+exit
