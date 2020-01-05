@@ -11,7 +11,7 @@ The Network Password Discovery Service allows you to rapidly get the password of
 
 
 # Usage
-Press CTRL + ALT + Q to automatically pop up the WIFI discovery window.
+Press CTRL + ALT + W to automatically pop up the WIFI discovery window.
 
 # Customization
 If you want to change the key bindings for the shortcut, do the following:
