@@ -8,14 +8,16 @@ namespace WifiPasswordDiscoveryService
         static void Main(string[] args)
         {
             //Extract wifi name
-            string networkName = 
-                NetSh.GeneratePropertyBag(ProcessRunner.Run("netsh", "wlan show interfaces"))[NetSh.WifiProfileKey];
+            Dictionary<string,string> networkInterfacePropertyBag = 
+                NetSh.GeneratePropertyBag(ProcessRunner.Run("netsh", "wlan show interfaces"));
             
-            if (string.IsNullOrEmpty(networkName))
+            if(!networkInterfacePropertyBag.ContainsKey(NetSh.WifiProfileKey))
             {
                 Console.WriteLine("You are not connected to a network!");
                 return;
             }
+
+            string networkName = networkInterfacePropertyBag[NetSh.WifiProfileKey];
             Dictionary<string,string> profilePropertyBag = 
                 NetSh.GeneratePropertyBag(ProcessRunner.Run("netsh", $"wlan show profiles \"{networkName}\" key=clear"));
 
