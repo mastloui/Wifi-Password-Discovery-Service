@@ -5,9 +5,9 @@ The Network Password Discovery Service allows you to rapidly get the password of
 > DISCLAIMER: This tool is not used to crack the password to wifi's you've never connected to.
 
 # Installation
- 
-  1. Run install.bat.
-  2. Restart your computer.
+  1. Download and unzip [WifiPasswordDiscoveryService.zip](https://github.com/mastloui/WifiPasswordDiscoveryService/releases) from the latest release.
+  2. Run install.bat.
+  3. Restart your computer.
 
 
 # Usage
