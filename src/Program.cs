@@ -14,6 +14,7 @@ namespace WifiPasswordDiscoveryService
             if(!networkInterfacePropertyBag.ContainsKey(NetSh.WifiProfileKey))
             {
                 Console.WriteLine("You are not connected to a network!");
+                Console.ReadKey();
                 return;
             }
 
@@ -24,6 +25,7 @@ namespace WifiPasswordDiscoveryService
             if (!profilePropertyBag.ContainsKey(NetSh.WifiPasswordKey))
             {
                 Console.WriteLine($"Network '{networkName}' does not require a password!");
+                Console.ReadKey();
                 return;
             }
 
